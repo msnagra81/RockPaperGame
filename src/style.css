@@ -1,0 +1,91 @@
+header {
+   color: black;
+   text-align: center;
+   background: white;
+   padding: 0px;
+}
+body{
+    background: black;
+}
+.score-board {
+    border: 3px solid white;
+    margin: 20px auto;
+    width: 200px;
+    border-radius: 10px;
+    text-align: center;
+    padding: 15px 20px;
+    position: relative;
+    color: white;
+}
+
+.badge {
+    background: red;
+    padding: 2px 10px;
+    color: white;
+    text-align: center;
+}
+
+#user-label{
+    position: absolute;
+    top: 12px;
+    left: -25px;
+}
+
+#comp-label{
+    position: absolute;
+    top: 12px;
+    right: -28px;
+}
+.result-message{
+    text-align: center;
+}
+
+.choice {
+    display: inline-block;
+    border-radius: 50%;
+    border-style: solid;
+    border-color: white;
+    padding: 10px;
+    margin: 20px 10px 0px 10px;
+    transition: all 0.3s ease;
+
+}
+.choices {
+    text-align: center;
+    padding: 40px 40px 10px 40px;
+}
+p {
+    color: white;
+    font-weight: bold;
+    font-size: 25px;
+    text-align: center;
+}
+#makeMove {
+    margin: 0px;
+    font-size: 20px;
+}
+.choice:hover {
+    cursor: pointer;
+    /* background: white; */
+    animation-name: wave-animation;
+    animation-duration: 2.5s;
+    /* animation-iteration-count: infinite; */
+}
+@keyframes wave-animation {
+    0% { transform: rotate(  0.0deg) }
+   10% { transform: rotate(-10.0deg) }
+   20% { transform: rotate( 12.0deg) }
+   30% { transform: rotate(-10.0deg) }
+   40% { transform: rotate(  9.0deg) }
+   50% { transform: rotate(  0.0deg) }
+  100% { transform: rotate(  0.0deg) }
+}
+.green-border {
+    border-color: green;
+}
+.red-border {
+    border-color: red;
+}
+.yellow-border {
+    border-color: yellow;
+}
